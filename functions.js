@@ -19,7 +19,8 @@ function defaultArg(a = 10, b = 10) {
 
 console.log("default arg :", defaultArg());
 
-// understanding scope
+// ------------>>>-------------------->>>>-------------------------->>>>>>
+// understanding global scope
 var myGlobal = 10;
 
 function func1() {
@@ -42,3 +43,13 @@ function func2() {
 }
 
 func2();
+
+// -------------------->>----------------->>>------------------->>>
+// understanding local scope
+function localFunc() {
+  var value = 10;
+  console.log("local scope value :", value);
+}
+localFunc();
+// here value is defined in local scope so if we try to access it outside of that scope we will get reference error: value is not defined
+// console.log(value);
