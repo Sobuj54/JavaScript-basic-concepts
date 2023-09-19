@@ -31,3 +31,8 @@ console.log(arr);
 arr.unshift(["sobuj", 64]);
 console.log("after using unshift() :", arr);
 //output after using unshift() : [ [ 'sobuj', 64 ], [ 'ahmed', 54 ] ]
+
+// ----------------------------->>-------------------->>
+// concatenate two arrays
+const concatenateArrays = (arr1, arr2) => arr1.concat(arr2);
+console.log(concatenateArrays([1, 2], [3, 4, 5]));
