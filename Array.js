@@ -44,3 +44,14 @@ var myArr2 = [...myArr];
 myArr[2] = 50;
 console.log(myArr);
 console.log(myArr2);
+
+// we can also remove elements when using spread operator
+var [, , ...newArr] = myArr2; //this will skip first and second index then copy the rest
+console.log("removed:", newArr);
+
+// ----------------->>----------------------------->>
+// switching index in array or switching value using array
+let a = 10,
+  b = 5;
+[a, b] = [b, a];
+console.log(a, b);

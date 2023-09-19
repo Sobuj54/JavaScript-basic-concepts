@@ -38,3 +38,14 @@ console.log(car);
 var hasKey = car.hasOwnProperty("tyres");
 console.log(hasKey);
 // inside car object tyres key exists so the result is true
+
+// -------------------->>----------------------------->>
+// assigning values of object fields to variables
+var obj = {
+  time: 20,
+  speed: 32,
+  name: "car",
+};
+
+const { time: x, speed: y, name: z } = obj; //now x=20 ,y=32, z="car"
+console.log(x, y, z);
