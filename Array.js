@@ -36,3 +36,11 @@ console.log("after using unshift() :", arr);
 // concatenate two arrays
 const concatenateArrays = (arr1, arr2) => arr1.concat(arr2);
 console.log(concatenateArrays([1, 2], [3, 4, 5]));
+
+// --------------->>----------------------->>
+// array (...)spread operator..arrays can not be copied like other variables..we need use spread operator to properly copy array
+var myArr = [10, 25, 12, 23];
+var myArr2 = [...myArr];
+myArr[2] = 50;
+console.log(myArr);
+console.log(myArr2);

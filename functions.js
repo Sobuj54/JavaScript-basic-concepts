@@ -53,3 +53,9 @@ function localFunc() {
 localFunc();
 // here value is defined in local scope so if we try to access it outside of that scope we will get reference error: value is not defined
 // console.log(value);
+
+// ----------------------->>------------------>>>
+// using rest operator inside function argument
+// (...) is called rest operator. this operator turns provided arguments into an array
+const sum = (...rest) => (summation = rest.reduce((a, b) => a + b, 0));
+console.log(sum(1, 2, 3, 4));
