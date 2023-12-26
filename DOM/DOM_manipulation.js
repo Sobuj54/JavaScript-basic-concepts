@@ -33,3 +33,15 @@ console.log("previous siblings:", previousSibling);
 // get child nodes
 const child = document.querySelector(".wrapper").childNodes; //.children to get child elements
 console.log("child nodes", child);
+
+// ------------------------->>---------------------->>
+const text = document.querySelector("#name");
+// changing text
+text.innerHTML = "Sobuj Ahmed";
+// adding style
+text.style.backgroundColor = "green";
+text.style.padding = "15px";
+
+// adding class
+text.classList.add("heading");
+// text.classList.remove("heading"); removing class
