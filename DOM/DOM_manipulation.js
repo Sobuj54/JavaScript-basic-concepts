@@ -54,8 +54,23 @@ section1.appendChild(div);
 div.classList.add("custom");
 
 const p = document.createElement("p");
-document.querySelector(".custom").appendChild(p);
+const customDiv = document.querySelector(".custom");
+customDiv.appendChild(p);
 p.innerHTML = "custom element";
 
 // adding id to a tag
 p.setAttribute("id", "para");
+
+// ----------->>------------>>>
+// attributes of an image
+const img = document.createElement("img");
+img.src =
+  "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph";
+
+// same thing but using setAttribute method
+// img.setAttribute("src","https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph")
+
+img.alt = "random image";
+// img.setAttribute("alt", "random image"); also the same thing
+
+customDiv.appendChild(img);
