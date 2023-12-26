@@ -45,3 +45,17 @@ text.style.padding = "15px";
 // adding class
 text.classList.add("heading");
 // text.classList.remove("heading"); removing class
+
+// -------------->>------------------>>
+const section1 = document.querySelector("#section-1");
+// creating element
+const div = document.createElement("div");
+section1.appendChild(div);
+div.classList.add("custom");
+
+const p = document.createElement("p");
+document.querySelector(".custom").appendChild(p);
+p.innerHTML = "custom element";
+
+// adding id to a tag
+p.setAttribute("id", "para");
