@@ -1,5 +1,6 @@
 "use strict";
-// this keyword points to the object
+
+// this keyword points to the object..this keyword only works in methods
 const obj = {
   first_name: "sobuj",
   last_name: "ahmed",
@@ -10,8 +11,13 @@ const obj = {
   calcAge: function () {
     console.log(2024 - this.born);
   },
+  // this keyword does not work in arrow functions
+  greet: () => {
+    console.log(this.first_name); //output: undefined
+  },
 };
 
+obj.greet();
 obj.addName();
 obj.calcAge(); //24
 
